@@ -11,7 +11,7 @@ An example Fabrix Application
 ## 1. Install
 Clone or fork this repository and then run:
 ```sh
-$ node install
+$ npm install
 ```
 
 ## 2. Build
