@@ -39,7 +39,7 @@
     "test"
   ],
   "dependencies": {
-    "@fabrix/fabrix": "^1.0.1",
+    "@fabrix/fabrix": "^1.0.2",
     "@fabrix/lint": "^1.0.0-alpha.3",
     "@fabrix/spool-i18n": "^1.0.0",
     "@fabrix/spool-repl": "^1.0.0",
