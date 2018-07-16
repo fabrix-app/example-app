@@ -28,7 +28,8 @@
     "prepublishOnly": "npm run compile",
     "compile": "npm run clean && npm run build",
     "clean": "rm -rf dist",
-    "ci": "cd .. && ci"
+    "ci": "cd .. && ci",
+    "start": "npm run compile && node dist/server"
   },
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",

@@ -6,7 +6,7 @@
 [![Dependency Status][daviddm-image]][daviddm-url]
 [![Follow @FabrixApp on Twitter][twitter-image]][twitter-url]
 
-An example Fabrix Application
+An example Fabrix Application.
 
 ## 1. Install
 Clone or fork this repository and then run:
