@@ -13,13 +13,13 @@
  */
 export const stores = {
   /**
-   * Define a store called "dev" which uses SQLite3 to persist data.
+   * Define a store called "dev" which uses Sequelize and SQLite3 to persist data.
    */
-  dev: {
-    orm: 'sequelize',
-    migrate: 'drop',
-    database: 'Sequelize',
-    host: '127.0.0.1',
-    dialect: 'postgres'
-  }
+  // dev: {
+  //   orm: 'sequelize',
+  //   migrate: 'drop',
+  //   database: 'Sequelize',
+  //   host: '127.0.0.1',
+  //   dialect: 'postgres'
+  // }
 }

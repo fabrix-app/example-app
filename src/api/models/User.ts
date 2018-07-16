@@ -1,10 +1,14 @@
 import { FabrixModel as Model } from '@fabrix/fabrix/dist/common'
+import { SequelizeResolver } from '@fabrix/spool-sequelize'
 
 /**
  * @module User
  * @description User account object
  */
 export class User extends Model {
+  static get resolver () {
+    return SequelizeResolver
+  }
 
   static config(app, Sequelize) {
     return {
@@ -21,7 +25,7 @@ export class User extends Model {
     }
   }
 
-  associate(models) {
+  static associate(models) {
     models.User.hasMany(models.WebToken, {
       as: 'web_tokens',
       onDelete: 'CASCADE',

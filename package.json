@@ -1,6 +1,6 @@
 {
   "name": "example-app",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A new Fabrix application",
   "homepage": "https://fabrix.app",
   "author": {
@@ -39,11 +39,11 @@
     "test"
   ],
   "dependencies": {
-    "@fabrix/fabrix": "^1.0.2",
+    "@fabrix/fabrix": "^1.0.8",
     "@fabrix/lint": "^1.0.0-alpha.3",
     "@fabrix/spool-i18n": "^1.0.0",
     "@fabrix/spool-repl": "^1.0.0",
-    "@fabrix/spool-sequelize": "^1.0.0",
+    "@fabrix/spool-sequelize": "^1.0.2",
     "@fabrix/spool-router": "^1.0.0",
     "@fabrix/spool-hapi": "^1.0.0",
     "lodash": "^4.17.5",

@@ -1,10 +1,15 @@
 import { FabrixModel as Model } from '@fabrix/fabrix/dist/common'
+import { SequelizeResolver } from '@fabrix/spool-sequelize'
 
 /**
  * @module WebToken
  * @description JWT Waterline Model
  */
 export class WebToken extends Model {
+  static get resolver () {
+    return SequelizeResolver
+  }
+
   static config(app, Sequelize) {
     return {
       options: {}
@@ -37,7 +42,7 @@ export class WebToken extends Model {
     }
   }
 
-  associate(models) {
+  static associate(models) {
     models.WebToken.belongsTo(models.User, {
       onDelete: 'CASCADE',
       foreignKey: {

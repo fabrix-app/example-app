@@ -10,14 +10,14 @@ describe('Controllers', () => {
   })
   describe('DefaultController', () => {
     describe('info', () => {
-      it('should return {app: \'1.0.0\'} on GET /default/info', (done) => {
+      it('should return {app: \'1.0.1\'} on GET /default/info', (done) => {
         request
           .get('/default/info')
           .expect(200)
           .end((err, res) => {
             console.log(err)
             const data = res.body
-            assert.equal(data.app, '1.0.0')
+            assert.equal(data.app, '1.0.1')
             done(err)
           })
       })

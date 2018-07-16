@@ -4,7 +4,7 @@
  *
  * Configure the model defaults
  *
- * @see {@link http://fabrix.app/doc/config/database}
+ * @see {@link http://fabrix.app/doc/config/models}
  */
 export const models = {
   /**
