@@ -6,14 +6,12 @@
  *
  * @see http://fabrix.app/doc/config/routes.js
  */
-export const routes = [
+export const routes = {
 
   /**
    * Constrain the DefaultController.info handler to accept only GET requests.
    */
-  {
-    method: 'GET',
-    path: '/api/v1/default/info',
-    handler: 'DefaultController.info'
+  '/api/v1/default/info': {
+    'GET': 'DefaultController.info'
   }
-]
+}
