@@ -1,3 +1,4 @@
+import { FabrixApp } from '@fabrix/fabrix'
 import { FabrixModel as Model } from '@fabrix/fabrix/dist/common'
 import { SequelizeResolver } from '@fabrix/spool-sequelize'
 
@@ -10,13 +11,13 @@ export class User extends Model {
     return SequelizeResolver
   }
 
-  static config(app, Sequelize) {
+  static config(app: FabrixApp, Sequelize?) {
     return {
       options: { }
     }
   }
 
-  static schema (app, Sequelize) {
+  static schema (app: FabrixApp, Sequelize?) {
     return {
       username: {
         type: Sequelize.STRING,
