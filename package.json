@@ -41,7 +41,7 @@
     "test"
   ],
   "dependencies": {
-    "@fabrix/fabrix": "^1.5.2",
+    "@fabrix/fabrix": "^1.5.3",
     "@fabrix/lint": "^1.0.0-alpha.3",
     "@fabrix/spool-i18n": "^1.5.0",
     "@fabrix/spool-repl": "^1.5.0",
@@ -49,7 +49,7 @@
     "@fabrix/spool-router": "^1.5.0",
     "@fabrix/spool-hapi": "^1.5.0",
     "lodash": "^4.17.11",
-    "winston": "^2.1.1"
+    "winston": "^3.1.0"
   },
   "devDependencies": {
     "@types/node": "~10.3.4",
