@@ -11,6 +11,10 @@ export const routes = {
   /**
    * Constrain the DefaultController.info handler to accept only GET requests.
    */
+  '/': {
+    'GET': 'DefaultController.hello'
+  },
+
   '/api/v1/default/info': {
     'GET': 'DefaultController.info'
   }

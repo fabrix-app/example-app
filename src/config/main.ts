@@ -19,10 +19,15 @@ export const main = {
    * This order does not effect the lifecycle of the spools which will be loaded according to their config.
    */
   spools: [
+    // Spool for REPL
     REPLSpool,
-    WinstonSpool,
+    // Spool for Winston as a log transport
+    // WinstonSpool,
+    // Spool for Router
     RouterSpool,
+    // Spool for Hapi Webserver
     HapiSpool,
+    // Spool for Sequelize ORM
     SequelizeSpool
   ],
 

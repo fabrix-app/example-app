@@ -8,7 +8,9 @@ import { FabrixController as Controller } from '@fabrix/fabrix/dist/common'
  * @this FabrixApp
  */
 export class DefaultController extends Controller {
-
+  hello (request, reply) {
+    return '<h1>Hello Fabrix</h1>'
+  }
   /**
    * Return some info about this application
    */
