@@ -15,11 +15,26 @@ export const stores = {
   /**
    * Define a store called "dev" which uses Sequelize and SQLite3 to persist data.
    */
-  // dev: {
-  //   orm: 'sequelize',
-  //   migrate: 'drop',
-  //   database: 'Sequelize',
-  //   host: '127.0.0.1',
-  //   dialect: 'postgres'
-  // }
+  dev: {
+    /**
+     * This specifies that we will be using spool-sequelize as the orm for this store reference
+     */
+    orm: 'sequelize',
+    /**
+     * The default migration strategy unless defined by the model config
+     */
+    migrate: 'drop',
+    /**
+     * The name of the database to use
+     */
+    database: 'Sequelize',
+    /**
+     * The host
+     */
+    host: '127.0.0.1',
+    /**
+     * The dialect to use for this sequelize store. eg. postgres, sqlite, mysql etc.
+     */
+    dialect: 'sqlite'
+  }
 }

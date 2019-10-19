@@ -5,6 +5,7 @@
  * @see http://fabrix.app/doc/config/main
  */
 import { REPLSpool } from '@fabrix/spool-repl'
+import { ErrorsSpool } from '@fabrix/spool-errors'
 import { RouterSpool } from '@fabrix/spool-router'
 import { SequelizeSpool } from '@fabrix/spool-sequelize'
 import { HapiSpool } from '@fabrix/spool-hapi'
@@ -23,6 +24,8 @@ export const main = {
     REPLSpool,
     // Spool for Winston as a log transport
     // WinstonSpool,
+    // Spool for standard errors
+    ErrorsSpool,
     // Spool for Router
     RouterSpool,
     // Spool for Hapi Webserver
