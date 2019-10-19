@@ -8,8 +8,11 @@
  */
 export const models = {
   /**
-   * The default store used by models
+   * The default store used by models if not provided on the model definition
    */
   defaultStore: 'dev',
+  /**
+   * The default migration setting to use if not provided on the store or model definition
+   */
   migrate: 'alter'
 }

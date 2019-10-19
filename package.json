@@ -1,6 +1,6 @@
 {
   "name": "example-app",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "description": "A new Fabrix application",
   "homepage": "https://fabrix.app",
   "author": {
@@ -41,32 +41,38 @@
     "test"
   ],
   "dependencies": {
-    "@fabrix/fabrix": "^1.5.3",
+    "@fabrix/fabrix": "^1.6.4",
     "@fabrix/lint": "^1.0.0-alpha.3",
-    "@fabrix/spool-hapi": "^1.5.0",
-    "@fabrix/spool-i18n": "^1.5.0",
+    "@fabrix/spool-errors": "^1.6.1",
+    "@fabrix/spool-hapi": "^1.6.1",
+    "@fabrix/spool-i18n": "^1.6.0",
     "@fabrix/spool-repl": "^1.5.0",
-    "@fabrix/spool-router": "^1.5.0",
-    "@fabrix/spool-sequelize": "^1.5.0",
-    "@fabrix/spool-winston": "^1.5.0",
+    "@fabrix/spool-router": "^1.6.4",
+    "@fabrix/spool-sequelize": "^1.6.17",
+    "@fabrix/spool-winston": "^1.6.0",
     "lodash": "^4.17.11",
     "winston": "^3.1.0"
   },
   "devDependencies": {
     "@types/node": "~10.3.4",
-    "mocha": "^5",
-    "nyc": "^13.0.1",
+    "mocha": "^6",
+    "nyc": "^14.1.1",
     "pg": "^6.4.2",
     "smokesignals": "^2.0.0",
+    "sqlite3": "^4.0.9",
+    "source-map-support": "^0.5.13",
     "supertest": "^3.3.0",
     "tslib": "~1.9.0",
-    "tslint": "~5.10.0",
-    "tslint-microsoft-contrib": "~5.0.3",
-    "tsutils": "~2.27.1",
-    "typescript": "~2.8.1"
+    "tslint": "~5.14.0",
+    "tslint-microsoft-contrib": "~6.1.0",
+    "tsutils": "~3.9.1",
+    "typedoc": "^0.15.0",
+    "typedoc-plugin-markdown": "^1.2.0",
+    "typescript": "~3.3.4000",
+    "typescript-closure-compiler": "^1.8.11"
   },
   "engines": {
-    "node": ">= 7.6.0 =< 10.0.0",
+    "node": ">= 7.6.0",
     "npm": ">= 3.10.0"
   }
 }

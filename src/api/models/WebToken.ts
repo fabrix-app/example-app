@@ -2,13 +2,19 @@ import { FabrixApp } from '@fabrix/fabrix'
 import { FabrixModel as Model } from '@fabrix/fabrix/dist/common'
 import { SequelizeResolver } from '@fabrix/spool-sequelize'
 
+
+export class WebtokenResolver extends SequelizeResolver {
+
+}
+
 /**
  * @module WebToken
  * @description JWT Waterline Model
  */
 export class WebToken extends Model {
+
   static get resolver () {
-    return SequelizeResolver
+    return WebtokenResolver
   }
 
   static config(app: FabrixApp, Sequelize) {
