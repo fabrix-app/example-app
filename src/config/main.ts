@@ -8,8 +8,10 @@ import { REPLSpool } from '@fabrix/spool-repl'
 import { ErrorsSpool } from '@fabrix/spool-errors'
 import { RouterSpool } from '@fabrix/spool-router'
 import { SequelizeSpool } from '@fabrix/spool-sequelize'
-import { HapiSpool } from '@fabrix/spool-hapi'
+// import { HapiSpool } from '@fabrix/spool-hapi'
+import { ExpressSpool } from '@fabrix/spool-express'
 import { WinstonSpool } from '@fabrix/spool-winston'
+import { TapestriesSpool } from '@fabrix/spool-tapestries'
 
 
 export const main = {
@@ -28,8 +30,12 @@ export const main = {
     ErrorsSpool,
     // Spool for Router
     RouterSpool,
+    // Spool for Tapestries
+    TapestriesSpool,
     // Spool for Hapi Webserver
-    HapiSpool,
+    // HapiSpool,
+    // Spool for Express Webserver
+    ExpressSpool,
     // Spool for Sequelize ORM
     SequelizeSpool
   ],

@@ -8,13 +8,13 @@ import { FabrixController as Controller } from '@fabrix/fabrix/dist/common'
  * @this FabrixApp
  */
 export class DefaultController extends Controller {
-  hello (request, reply) {
-    return '<h1>Hello Fabrix</h1>'
+  hello (req, res) {
+    return res.send('<h1>Hello Fabrix</h1>')
   }
   /**
    * Return some info about this application
    */
-  info (request) {
-    return this.app.services.DefaultService.getApplicationInfo()
+  info (req, res) {
+    return res.json(this.app.services.DefaultService.getApplicationInfo())
   }
 }

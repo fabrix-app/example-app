@@ -41,7 +41,7 @@ export const tapestries = {
       /**
        * Whether to populate all model associations by default (for "find")
        */
-      populate: true
+      populate: false
     },
 
     actions: {
@@ -53,15 +53,15 @@ export const tapestries = {
       /**
        * Specify which "association" endpoints to activate.
        */
-      createAssociation: true,
-      findAssociation: true,
-      updateAssociation: true,
-      destroyAssociation: true
+      createAssociation: false,
+      findAssociation: false,
+      updateAssociation: false,
+      destroyAssociation: false
     }
   },
 
   /**
-   * Prefix your footprint routes
+   * Prefix your tapestry routes
    */
   prefix: '/api/v1'
 }
